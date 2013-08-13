@@ -202,12 +202,6 @@ optional in the hibernate-validator POM  -->
                             <!--<goal>i18n</goal>-->
                             <!--<goal>generateAsync</goal>-->
                         </goals>
-                        <configuration>
-                            <extraJvmArgs>-Xms256m -Xmx768m -XX:MaxPermSize=256M</extraJvmArgs>
-                            <modules>
-                                <module>at.mikemitterer.gwt.rfsample.RFSample</module>
-                            </modules>
-                        </configuration>
                     </execution>
                 </executions>
                 <!-- Plugin configuration. There are many available options, see gwt-maven-plugin
@@ -218,23 +212,6 @@ optional in the hibernate-validator POM  -->
                 </configuration>
             </plugin>
 
-            <!-- Copy static web files before executing gwt:run -->
-<!--            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.1.1</version>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>exploded</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <webappDirectory>${webappDirectory}</webappDirectory>
-                </configuration>
-            </plugin>-->
 
 
             <plugin>
